@@ -1,0 +1,34 @@
+
+####Insert Route
+POST http://localhost:3000/auth/insert
+Content-Type:application/json
+
+{
+    "movieName":"Avengers",
+    "rating":"5",
+    "cast":["Thor, hulk"],
+    "genre":"cartoon",
+    "releaseDate":"2020-05-18T14:10:30Z",
+}
+####Register Route
+POST http://localhost:3000/auth/update
+Content-Type:application/json
+
+{
+    "email":"heroone@gmail.com",
+    "password":"1234"
+}
+####Refresh token Route
+POST http://localhost:3000/auth/delete
+Content-Type:application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NDQ4MjMyMjAsImV4cCI6MTY3NjM4MDgyMCwiYXVkIjoiNjIwOGI2ZTBkMDA5OTI4OTAwZmE5MDBlIiwiaXNzIjoiYWtzaGtpZC5jb20ifQ.hvrb-6gGfIuy5i028AsnuX4toqpTwUnJD4Bp4YgQbb4"
+}
+
+####Logout Route
+DELETE  http://localhost:3000/auth/logout
+Content-Type:application/json
+{
+    "refreshToken":""
+}

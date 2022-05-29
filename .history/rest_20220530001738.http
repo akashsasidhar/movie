@@ -1,0 +1,27 @@
+
+####Insert Route
+POST http://localhost:3000/movie/insert
+Content-Type:application/json
+
+{
+    "movieName":"Avengers",
+    "rating":"5",
+    "cast":["Thor, hulk"],
+    "genre":"cartoon",
+    "releaseDate":"2020-05-18T14:10:30Z",
+}
+####Register Route
+POST http://localhost:3000/movie/update
+Content-Type:application/json
+
+{
+    "email":"heroone@gmail.com",
+    "password":"1234"
+}
+####Refresh token Route
+POST http://localhost:3000/movie/delete
+Content-Type:application/json
+
+{
+   "movieName":"Avengers",
+}
